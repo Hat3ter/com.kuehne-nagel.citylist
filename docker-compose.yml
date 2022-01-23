@@ -1,0 +1,38 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:13.3
+    container_name: city_db
+    user: postgres
+    environment:
+      POSTGRES_DB: "city-db"
+      POSTGRES_USER: "city-user"
+      POSTGRES_PASSWORD: "city-pass"
+    ports:
+      - 5432:5432
+  city-back:
+    build:
+      dockerfile: Dockerfile
+      context: ./sitylist
+    #    image: "city-back:latest"
+    container_name: city-back
+    environment:
+      DB_URL: "jdbc:postgresql://postgres:5432/city-db"
+      DB_USER: "city-user"
+      DB_PASS: "city-pass"
+    ports:
+      - 8080:8080
+    depends_on:
+      - postgres
+  city-react:
+    build:
+      args:
+        URL_CITY_API: "http://127.0.0.1:8080/api/v1"
+      dockerfile: Dockerfile
+      context: ./sitylist-react
+    #    image: "city-react:latest"
+    container_name: city-react
+    ports:
+      - 3000:3000
+    depends_on:
+      - city-back

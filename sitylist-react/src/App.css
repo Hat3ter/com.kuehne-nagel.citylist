@@ -1,0 +1,14 @@
+.wrapper {
+    padding: 50px;
+}
+
+.inline{
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px;
+}
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

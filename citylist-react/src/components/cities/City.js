@@ -36,7 +36,7 @@ export default function City({setToken, props}) {
         }).catch(error => {
             if (error.response.status === 403) {
                 setToken(error.response.headers["authorization"])
-                setErrorMsg("You haven's permissions for edit")
+                setErrorMsg("You haven't permissions to edit")
                 console.log(errorMsg)
             } else {
                 setCity(null)

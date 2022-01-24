@@ -5,12 +5,12 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/sitylist" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/citylist" />
         <option name="gradleHome" value="C:/gradle-7.0.1" />
         <option name="gradleJvm" value="11" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/sitylist" />
+            <option value="$PROJECT_DIR$/citylist" />
           </set>
         </option>
       </GradleProjectSettings>

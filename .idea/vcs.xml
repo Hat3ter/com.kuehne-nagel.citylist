@@ -2,9 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/sitylist" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/sitylist-react" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/temp/sitylist" vcs="" />
-    <mapping directory="$PROJECT_DIR$/temp/sitylist-react" vcs="" />
+    <mapping directory="$PROJECT_DIR$/temp/citylist" vcs="" />
+    <mapping directory="$PROJECT_DIR$/temp/citylist-react" vcs="" />
   </component>
 </project>

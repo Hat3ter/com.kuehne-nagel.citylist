@@ -40,6 +40,9 @@ dependencies {
 
     implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.2'
     testImplementation group: 'com.h2database', name: 'h2', version: '2.1.210'
+
+    // solve issue with unknown enum constant When.MAYBE
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
 }
 
 test {

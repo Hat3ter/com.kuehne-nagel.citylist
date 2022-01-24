@@ -108,7 +108,7 @@ export default function City({setToken, props}) {
                         <img alt={`${props.name} not found`} src={props.photoPath} onError={() => setIsRenderEdit(false)}/>
                     </div>
                     <div className="inline">
-                        {renderEdit()}
+                        <button onClick={(e) => changeEdit(e)}>edit</button>
                     </div>
                 </div>
                 <div className="inline">

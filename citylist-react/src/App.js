@@ -25,6 +25,7 @@ function App() {
                     <ul>
                         <li className="inline"><Link to={{pathname: "/"}}>Home</Link></li>
                         <li className="inline"><Link to={{pathname: "/search"}}>Search</Link></li>
+                        <li className="inline"><a href="/" onClick={() => setToken(null)}>Quit</a></li>
                     </ul>
                 </div>
             </div>

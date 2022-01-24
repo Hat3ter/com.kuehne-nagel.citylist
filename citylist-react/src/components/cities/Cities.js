@@ -22,6 +22,7 @@ export default function Cities({setToken, props}) {
         }).then((response) => {
             console.log(response.data.data)
             setItems(response.data.data)
+            items = response.data.data
             setToken(response.headers["authorization"])
         }).catch(error => {
             console.error(error)
@@ -29,7 +30,7 @@ export default function Cities({setToken, props}) {
     }
 
     useEffect(() => {
-
+        console.log("use effect ", page)
         getAllCities(page)
     }, [])
 
